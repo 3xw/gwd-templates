@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="gwdcomponents.css">
+  <meta name="generator" content="Google Web Designer 5.0.1.1129">
+  <meta name="template" content="Banner 3.0.0">
+  <meta name="environment" content="gwd-googleads">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+    }
+    .gwd-page-wrapper {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      transform: translateZ(0px);
+    }
+    .gwd-page-size {
+      width: 300px;
+      height: 250px;
+    }
+    #taparea {
+      position: absolute;
+      width: 300px;
+      height: 250px;
+    }
+  </style>
+  <script data-source="gwdcomponents.js" type="text/javascript" src="gwdcomponents.js"></script>
+  <script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-google-ad" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script type="text/javascript" id="TweenMax" src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+  <script type="text/javascript" src="assets/app.js"></script>
+  <script id="gwd-template-data" type="application/json">{"label":"300x250","adData":{"platforms":[],"networks":[0],"features":[],"verticals":[],"adTypes":[0],"components":[]},"dynamicSchema":"","dimensions":[{"width":300,"height":250,"responsive":false}],"usageData":{"creationTimeMs":1544522415000},"thumbnail":"300x250_thumb.png","links":[]}</script>
+</head>
+
+<body>
+  <gwd-google-ad id="gwd-ad" polite-load="">
+    <gwd-metric-configuration>
+      <gwd-metric-event source="taparea" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
+    </gwd-metric-configuration>
+    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="300px" data-gwd-height="250px">
+        <div class="gwd-page-content gwd-page-size">
+          <gwd-taparea id="taparea" class="gwd-taparea-1sfu"></gwd-taparea>
+        </div>
+      </gwd-page>
+    </gwd-pagedeck>
+  </gwd-google-ad>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      var gwdAd = document.getElementById('gwd-ad');
+
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+      function handleDomContentLoaded(event) {
+
+      }
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        // Start the Ad lifecycle.
+        setTimeout(function() {
+          gwdAd.initAd();
+        }, 0);
+      }
+
+      /**
+       * Handles the event that is dispatched after the Ad has been
+       * initialized and before the default page of the Ad is shown.
+       */
+      function handleAdInitialized(event) {}
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+      window.addEventListener('adinitialized',
+        handleAdInitialized, false);
+    })();
+  </script>
+</body>
+
+</html>
